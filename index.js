@@ -1,5 +1,6 @@
 const jsonServer = require('json-server');
 const cors = require('cors');
+const db = require('./db.json');
 
 /* const db = {
     garage: [
@@ -34,7 +35,7 @@ const cors = require('cors');
 }; */
 
 const server = jsonServer.create();
-const router = jsonServer.router('db.json');
+const router = jsonServer.router(db);
 const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 3000;
