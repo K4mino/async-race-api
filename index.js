@@ -1,7 +1,7 @@
 const jsonServer = require('json-server');
 const cors = require('cors');
 
-server.use(cors());
+
 const db = {
     garage: [
         {
@@ -42,6 +42,7 @@ const PORT = process.env.PORT || 3000;
 
 const state = { velocity: {}, blocked: {} };
 
+server.use(cors());
 server.use(middlewares);
 
 const STATUS = {
