@@ -1,5 +1,7 @@
 const jsonServer = require('json-server');
+const cors = require('cors');
 
+server.use(cors());
 const db = {
     garage: [
         {

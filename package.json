@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "mikhama",
+  "author": "kamino",
   "license": "MIT",
   "devDependencies": {
     "json-server": "^0.16.3"
