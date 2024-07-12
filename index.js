@@ -1,8 +1,7 @@
 const jsonServer = require('json-server');
 const cors = require('cors');
 
-
-const db = {
+/* const db = {
     garage: [
         {
             "name": "Tesla",
@@ -32,10 +31,10 @@ const db = {
             time: 10,
         }
     ]
-};
+}; */
 
 const server = jsonServer.create();
-const router = jsonServer.router(db);
+const router = jsonServer.router('db.json');
 const middlewares = jsonServer.defaults();
 
 const PORT = process.env.PORT || 3000;
